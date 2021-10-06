@@ -16,7 +16,7 @@ import com.rest.webservices.restfulwebservices.user.UserNotFoundException;
 
 @ControllerAdvice
 @RestController
-public class CustomizedExceptonResponse extends ResponseEntityExceptionHandler {
+public class CustomizedExceptionResponse extends ResponseEntityExceptionHandler {
 	@ExceptionHandler(Exception.class)
 	public final ResponseEntity<Object> handleAllExceptions(Exception ex, WebRequest request) {
 		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(),
