@@ -1,0 +1,1 @@
+### Initialize this folder with git-init and then add path to spring project as external file.
